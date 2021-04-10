@@ -15,8 +15,6 @@ import {
 export class BlogsSubscriber implements EntitySubscriberInterface<BlogsEntity> {
   public static emitter: EventEmitter;
   constructor() {
-    console.log('????');
-    // this.connection.subscribers.push(this);
     if (!BlogsSubscriber.emitter) {
       BlogsSubscriber.emitter = new EventEmitter();
     }

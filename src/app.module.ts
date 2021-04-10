@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { TypeOrmService } from 'config';
 import { FirebaseAdminModule } from '@aginix/nestjs-firebase-admin';
+import { JwtModule, JwtService } from '@nestjs/jwt';
 import * as admin from 'firebase-admin';
 
 import { FIREBASE_SERVICE_CREDENTIALS } from 'environments';

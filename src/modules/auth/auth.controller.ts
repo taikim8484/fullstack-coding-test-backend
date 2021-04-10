@@ -60,4 +60,13 @@ export class AuthController {
       status: HttpStatus.OK,
     };
   }
+
+  @Post('sign-out')
+  async signOut() {
+    // TODO: black list access token
+    return {
+      message: 'Logout successfully',
+      status: HttpStatus.OK,
+    };
+  }
 }
